@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Usar las fuentes que definiste en layout.tsx */
+body {
+  font-family: var(--font-montserrat), var(--font-poppins), sans-serif;
+}
+
+/* Contenedor global */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Fondo cachalote (ejemplo para sección hero/cta) */
+.bg-cachalote {
+  background-image: url('/images/gallery/cachalotecta.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+}
